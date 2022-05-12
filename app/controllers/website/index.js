@@ -7,7 +7,7 @@ const websiteController = {
      * @returns Route API JSON response
      */
     home(_, res) {
-        res.render('home', { title: "<Here the title of your project>" });
+        res.render('home', { title: '<Here the title of your project>' });
     },
 };
 

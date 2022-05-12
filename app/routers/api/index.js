@@ -8,9 +8,7 @@ const router = express.Router();
 
 router.all('/', apiController.home);
 
-// On préfixe les routers de l'API
-
-
+// Here you put all the routes you need on your API
 
 router.use(() => {
     throw new ApiError('API Route not found', { statusCode: 404 });

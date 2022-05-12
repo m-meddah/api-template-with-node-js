@@ -3,8 +3,8 @@ const expressJSDocSwagger = require('express-jsdoc-swagger');
 const options = {
     info: {
         version: '1.0.0',
-        title: "<Here the title of your project>",
-        description: "<Here the description of your project>",
+        title: '<Here the title of your project>',
+        description: '<Here the description of your project>',
     },
     baseDir: __dirname,
     filesPattern: ['../routers/**/*.js', '../errors/*.js', '../models/*.js'],
