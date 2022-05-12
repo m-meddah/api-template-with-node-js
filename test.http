@@ -1,0 +1,15 @@
+################################################################################
+# Test file for API's HTTP routes
+# Needs REST Client extension for VSCode
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+################################################################################
+@endpoint = http://localhost:{{$dotenv PORT}}/api
+
+### API home
+GET {{ endpoint }}/
+
+### API doc
+GET {{ endpoint }}/docs
+
+### 404
+GET {{ endpoint }}/something
